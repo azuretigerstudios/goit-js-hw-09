@@ -1,0 +1,86 @@
+/* form.css – Cyberpunk Blue Neon Feedback Form */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+body {
+  background-color: #010409;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #00eaff;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 20, 40, 0.7);
+  border: 2px solid #00eaff;
+  border-radius: 15px;
+  padding: 30px 40px;
+  box-shadow: 0 0 15px #00eaff99, inset 0 0 20px #00eaff33;
+  width: 350px;
+}
+
+label {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  text-shadow: 0 0 5px #00eaff;
+}
+
+input,
+textarea {
+  background-color: transparent;
+  border: 1px solid #00eaff;
+  color: #00eaff;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 0 8px #00eaff33;
+  transition: 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 15px #00eaff, 0 0 30px #0077ff;
+}
+
+button {
+  background-color: transparent;
+  color: #00eaff;
+  border: 1px solid #00eaff;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: inherit;
+  cursor: pointer;
+  text-shadow: 0 0 10px #00eaff;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: #00eaff;
+  color: #010409;
+  box-shadow: 0 0 20px #00eaff, 0 0 40px #0077ff;
+}
+
+.back-button {
+  position: absolute;  /* position it relative to the page */
+  top: 20px;           /* distance from the top */
+  left: 20px;          /* distance from the left */
+  padding: 10px 20px;
+  background-color: #0ff; /* neon cyan */
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0 0 5px #0ff;
+  transition: 0.3s;
+  z-index: 1000;       /* make sure it's on top */
+}
+
+.back-button:hover {
+  box-shadow: 0 0 15px #0ff;
+}
