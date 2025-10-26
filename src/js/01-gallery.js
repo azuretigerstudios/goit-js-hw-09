@@ -1,7 +1,7 @@
 window.global = window;
 import SimpleLightbox from "/node_modules/simplelightbox/dist/simple-lightbox.esm.js";
 import "/node_modules/simplelightbox/dist/simple-lightbox.min.css";
-import { galleryItems } from "./gallery-items";
+import { galleryItems } from "../js/gallery-items";
 
 const galleryContainer = document.querySelector(".gallery");
 
