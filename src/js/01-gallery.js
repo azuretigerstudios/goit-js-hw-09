@@ -1,4 +1,4 @@
-import SimpleLightbox from './simple-lightbox.esm.js';
+import SimpleLightbox from 'simple-lightbox';
 import { galleryItems } from './gallery-items.js';
 
 const galleryContainer = document.querySelector('.gallery');
